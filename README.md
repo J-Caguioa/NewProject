@@ -1,2 +1,2 @@
-# NewProject
-Files for winter 2018 semester of MSDS 6306.402: Doing Data Science.
+# stat6306introdatascience
+Files and projects for Stat 6306 Introduction to Data Science
