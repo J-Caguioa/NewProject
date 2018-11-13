@@ -1,0 +1,45 @@
+---
+title: "DataScienceProfile"
+author: "Joseph Caguioa"
+date: "11/13/2018"
+output: html_document
+---
+
+# Data Science Profile
+
+Code and graph for data science profile ratings:
+
+* computer programming: 2
+* math: 3
+* statistics: 2
+* machine learning: 1
+* domain expertise (biology): 3 
+* communication and presentation skills: 3
+* data visualization: 2
+
+```{r profile, fig.align='center'}
+# Create data science profile categories and rankings as vectors
+# and combine them as columns of a data frame.
+categories <- c('computer programming', 
+                'math', 
+                'statistics', 
+                'machine learning', 
+                'domain expertise (biology)',
+                'communication and presentation skills',
+                'data visualization')
+rankings <- c(2, 3, 2, 1, 3, 3, 2)
+Joseph <- data.frame(categories, rankings)
+
+# Create bar graph of the data frame. To avoid long x-axis labels,
+# the categories are placed in a legend.
+par(mar=c(5,4,4,4))
+Joseph_bar <- barplot(Joseph$rankings,
+              main = 'Joseph\'s Data Science Profile',
+              ylab = 'Rankings', ylim = c(0,5), las = 2,
+              col = rainbow(7),
+              legend = Joseph$categories,
+              args.legend = list(title = "Categories",
+                                 x = "topright",
+                                 cex = .65)
+              )
+```
