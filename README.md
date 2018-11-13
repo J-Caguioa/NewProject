@@ -1,2 +1,2 @@
 # stat6306introdatascience
-Files and projects for Stat 6306 Introduction to Data Science
+Repository for 2018 winter semester of MSDS 6306.402: Doing Data Science.
